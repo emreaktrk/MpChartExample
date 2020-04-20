@@ -4,18 +4,13 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.content.ContextCompat
-import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.formatter.ValueFormatter
 import com.github.mikephil.charting.highlight.Highlight
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener
-import com.github.mikephil.charting.renderer.XAxisRenderer
-import com.github.mikephil.charting.utils.Transformer
-import com.github.mikephil.charting.utils.ViewPortHandler
 import kotlinx.android.synthetic.main.activity_main.*
-import java.util.*
 import kotlin.random.Random
 
 private const val GRAN = 1f
@@ -108,7 +103,5 @@ class MainActivity : AppCompatActivity() {
 
 class MonthValueFormatter : ValueFormatter() {
 
-    override fun getFormattedValue(value: Float): String {
-        return "MAY"
-    }
+    override fun getFormattedValue(value: Float): String = "MAY"
 }
