@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setup() {
         chart.xAxis.run {
-            granularity = 1f
+            granularity = GRAN
             valueFormatter = MonthValueFormatter()
             textColor = Color.WHITE
             textSize = 12f
