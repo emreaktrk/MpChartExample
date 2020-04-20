@@ -107,30 +107,8 @@ class MainActivity : AppCompatActivity() {
 }
 
 class MonthValueFormatter : ValueFormatter() {
-    private val months = Stack<String>()
-
-    init {
-        with(months) {
-            add("ARA")
-            add("KAS")
-            add("EYL")
-            add("AĞU")
-            add("6 TEM")
-            add("HAZ")
-            add("MAY")
-            add("NİS")
-            add("MAR")
-            add("ŞUB")
-            add("OCA")
-        }
-    }
 
     override fun getFormattedValue(value: Float): String {
         return "MAY"
     }
-}
-
-class AxisRenderer(viewPortHandler: ViewPortHandler?, xAxis: XAxis?, trans: Transformer?) :
-    XAxisRenderer(viewPortHandler, xAxis, trans) {
-
 }
